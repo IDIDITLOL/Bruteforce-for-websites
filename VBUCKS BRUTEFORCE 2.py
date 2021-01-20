@@ -63,7 +63,7 @@ if IF_SIGNED_IN == str('YES'):
             time.sleep(9)
 
 
-            def CHECK_INVALID_VALID(xpath):
+            def CHECK_INVALID_VALIDATE(xpath):
 
                 try:
                     web.find_element_by_xpath(xpath)
@@ -72,7 +72,7 @@ if IF_SIGNED_IN == str('YES'):
                     CODE_MADE_VALID = True
                 pass
 
-
+            CHECK_INVALID_VALIDATE('//*[@id="fortnite-posa-redemption"]/div[1]/div[2]/div/div[3]/span')
             if CODE_MADE_VALID:
                 print('FOUND CODE AND REDEEMED PLEASE CHECK EMAIL')
                 quit()
